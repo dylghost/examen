@@ -5,6 +5,23 @@ Clase: 10 - Examen 1 (C++)
 Fecha: 18/03/2026
 Tema:
 Sistema de registro y análisis de notas de estudiantes
+Entrada:
+- Cantidad de estudiantes
+- Nombres de estudiantes
+- Nota de cada estudiante
+Proceso:
+- Validar datos ingresados
+- Almacenar información en arreglos
+- Calcular promedio general
+- Buscar una nota mayor y una nota menor
+- Mostrar reporte de aprobados y reprobados
+- Permitir consultar un estudiante por nombre
+Salida:
+- Listado de estudiantes y notas
+- Promedio general
+- Nota mayor y nota menor
+- Cantidad de aprobados y reprobados
+- Resultado de búsqueda por nombre
 */
 #include <iostream>
 using namespace std;
@@ -53,5 +70,19 @@ int main() {
     } while(opcion != 7);
 
     return 0;
+}
+int menu() {
+    int op;
+    cout << "1. Registrar estudiantes y notas";
+    cout << "2. Mostrar listado completo";
+    cout << "3. Mostrar promedio general";
+    cout << "4. Mostrar nota mayor y nota menor";
+    cout << "5. Mostrar aprobados y reprobados";
+    cout << "6. Buscar estudiante por nombre";
+    cout << "7. Salir";
+    cout << "Seleccione una opcion: ";
+    cin >> op;
+
+    return op;
 }
 
